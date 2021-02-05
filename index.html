@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Trip</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header content">
+        <div class="header-video">
+            <video src="videos/food-place.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="header-overlay"></div>
+
+        <div class="header-content">
+            <h1 id="title">Meal Trip</h1>
+            <p id="content">Looking for the better places to eat?</p>
+            <a class="btn">
+                <span>Join Us!</span>
+            </a>
+        </div>
+    </header>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        window.sr = ScrollReveal();
+        window.sr.reveal('.header-video', {
+            duration: 2000,
+            origin: 'left',
+        });
+        window.sr.reveal('#title', {
+            duration: 2000,
+            origin: 'right',
+            delay: 2000
+        });
+        window.sr.reveal('#content', {
+            duration: 2000,
+            origin: 'left',
+            delay: 2000,
+        });
+        window.sr.reveal('.btn', {
+            duration: 2000,
+            origin: 'bottom',
+            delay: 2000
+        });
+    </script>
+</body>
+
+</html>
